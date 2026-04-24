@@ -19,4 +19,4 @@ def detail_book(request, id):
         'book': book,
     }
 
-    return render(request, 'book/detail.html', context)
+    return render(request, 'books/detail.html', context)
