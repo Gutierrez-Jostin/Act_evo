@@ -12,11 +12,11 @@ def home(request):
     }
     return render(request, 'books/home.html', context)
 
-def detail(request, id):
+def detail_book(request, id):
     book = get_object_or_404(Books, id=id)
 
     context = {
         'book': book,
     }
 
-    return render(request, 'blog/detail.html', context)
+    return render(request, 'book/detail.html', context)
